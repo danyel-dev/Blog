@@ -1,4 +1,6 @@
-class Leitor:
+from interface_leitor import abstract_Leitor
+
+class Leitor(abstract_Leitor):
 
     __slots__ = ["_nome", "_sobrenome", "_idade"]
 

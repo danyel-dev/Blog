@@ -1,4 +1,6 @@
-class Autor:
+from interface_autor import abstract_Autor
+
+class Autor(abstract_Autor):
 
     __slots__ = ["_nome", "_sobrenome", "_idade", "_posts", "_leitores"]
 
@@ -45,20 +47,10 @@ class Autor:
     def posts(self):
         return self._posts
 
-    
-    @posts.setter
-    def posts(self, post):
-        print("Você não pode alterar os posts por aqui")
-
 
     @property
     def leitores(self):
         return self._leitores
-
-    
-    @leitores.setter
-    def leitores(self, leitor):
-        print("Você não pode alterar os leitores por aqui")
 
 
     def add_post(self, post):

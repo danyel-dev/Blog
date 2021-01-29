@@ -44,11 +44,6 @@ class Post:
     def conteudo(self):
         return self._conteudo
 
-    
-    @conteudo.setter
-    def conteudo(self, conteudo):
-        self._conteudo = conteudo
-
 
     def imprimir_post(self):
         print(f"Título: {self._titulo}")
@@ -60,7 +55,3 @@ class Post:
     def update(self, conteudo, data_atualizacao):
         self._conteudo = conteudo
         self._data_atualizacao = data_atualizacao
-
-
-if __name__ == "__main__":
-    print("oi")
