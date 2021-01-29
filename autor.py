@@ -89,8 +89,9 @@ class Autor(abstract_Autor):
     def atualizar_post(self, titulo):
         for post in self._posts:
             if titulo == post.titulo:
-                msg = "Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição."
-                post.update(msg, "203914")
+                msg = input("Conteudo: ")
+                data = input("Data: ")
+                post.update(msg, data)
 
                 for leitor in self._leitores:
                     msg = f"O autor {self._nome} atualizou o Post intitulado -> {post._titulo}"
